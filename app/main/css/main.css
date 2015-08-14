@@ -1,0 +1,22 @@
+@font-face {font-family: 'PT Sans'; 
+	src: url('../fonts/pts55f_w.eot'); 
+	src: local('PT Sans'), url('PTS55F_W.eot?#iefix') format('embedded-opentype'), url('PTS55F_W.woff') format('woff'),url('PTS55F_W.ttf') format('truetype'), url('PTS55F_W.svg#PTSans-Regular') format('svg');}
+	
+.body{
+	font-family: 'PT Sans',serif;
+	font-size: 15px;
+}	
+
+.main-content{}
+.section{
+	margin: 0 auto;
+	width: 1200px;
+	padding-top: 35px;
+}
+.main-content__firstsection{
+  background: url(../images/bg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

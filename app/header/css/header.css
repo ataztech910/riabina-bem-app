@@ -1,0 +1,55 @@
+.header{
+	display: table-row;
+}
+.header__logo{
+	display: table-cell;
+}
+.header__logo--scroll{
+	display: none;
+}
+.header__menu{
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+	width: 650px;
+}
+.header__phone{
+	display: table-cell;
+	vertical-align: middle;
+	padding-bottom: 3px;
+}
+/*-------------MENU----------------*/
+.header__menuList{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	position: absolute;
+	width: 650px;
+    left: 52px;
+    top: 43px;
+}
+.menuList__element{
+	 display: inline;
+	 padding: 10px;
+	 margin-right: 16px;
+}
+.menuList__Link{
+	color:#050505;
+	text-decoration: none;
+}
+.menuList__Link:hover{
+	text-decoration: underline;
+}
+/*---------------------------------*/
+.topphone{
+	font-size: 26px;	
+}
+.topphone--red{
+	color: #e11c2a;
+}
+.topphone__label{
+	font-size: 14px;
+}
+.topphone__label--black{
+	color:#000;	
+}
