@@ -1,3 +1,26 @@
+@font-face {font-family: 'PT Sans'; 
+	src: url('../fonts/pts55f_w.eot'); 
+	src: local('PT Sans'), url('../fonts/PTS55F_W.eot?#iefix') format('embedded-opentype'), url('../fonts/PTS55F_W.woff') format('woff'),url('../fonts/PTS55F_W.ttf') format('truetype'), url('../fonts/PTS55F_W.svg#PTSans-Regular') format('svg');}
+
+
+@font-face {font-family: 'PT Sans';
+	src: url('../fonts/pts75f_w.eot');
+	font-style: normal;
+	font-weight: bold; 
+	src: local('PT Sans Bold'), url('../fonts/PTS75F_W.eot?#iefix') format('embedded-opentype'), url('../fonts/PTS75F_W.woff') format('woff'),url('../fonts/PTS75F_W.ttf') format('truetype'), url('../fonts/PTS75F_W.svg#PTSans-Bold') format('svg');}
+	
+.body{
+	font-family: 'PT Sans',serif;
+	font-size: 15px;
+	margin: 0;
+}	
+
+.section{
+	margin: 0 auto;
+	width: 1200px;
+	padding-top: 35px;
+}
+
 .header{
 	display: table-row;
 	width: 100%;
@@ -44,13 +67,19 @@
 	position: relative;
 	
 }
+
+.menuList__Link--white{
+	color: #fff !important;
+}
+
 .menuList__Link:hover{
 	text-decoration: underline;
 }
 
 .menuList__link__second__div{
 	position: absolute;
-	background: url(../images/menu-bg.png);
+	//background: url(../images/menu-bg.png);
+	background: #e11c2a;
 	top: -200%;
     padding-top: 110px;
     padding-bottom: 20px;
@@ -80,7 +109,7 @@
 }
 .menuList__link--active{
 	color: #fff;
-	font-weight: bold;
+	
 	z-index: 9999;
 }
 .menuList__link__second__div__inside{
@@ -97,11 +126,19 @@
 .topphone--red{
 	color: #e11c2a;
 }
+.topphone--white{
+	color:#fff;
+}
+
 .topphone__label{
 	font-size: 14px;
 }
 .topphone__label--black{
 	color:#000;	
+}
+
+.topphone__label--white{
+	color:#fff;
 }
 /*---------------------------------*/
 .userAuth{

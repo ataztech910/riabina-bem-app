@@ -1,0 +1,9 @@
+.footer{
+	background: #5a7a8b;
+	color: #fff;
+	position: relative;
+	height: 100%;
+}
+.leftMenu__menu__link, .copyright__link{
+	color: #fff;
+}

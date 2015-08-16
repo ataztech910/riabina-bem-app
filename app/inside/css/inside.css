@@ -1,0 +1,39 @@
+.textblocks{
+		position:relative;
+		
+		display:block;
+		width: 100%;
+		z-index:9;
+		color: #000;
+		bottom:0px;
+		clear: both;
+		padding:0;
+		margin: 0px;
+		padding-bottom: 10px;
+		line-height: 25px;
+}
+
+.clear{
+    clear: both;
+}
+
+.textblocks__col{
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+	padding:10px; 
+}
+.textblocks__col:first-child { margin-left: 0; }
+
+.textblocks__col--_1_of_2 {
+	width: 47%;
+}
+
+.textblocks__col--red{
+	background: #e11c2a;
+	color: #ffffff;
+}
+
+.second-step{
+	background: #e0e3f4;
+}
