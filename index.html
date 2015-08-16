@@ -5,7 +5,9 @@
 <!--CSS injection start-->
 <link rel="stylesheet" type="text/css" href="./app/header/css/jquery.fullPage.css" />
 <link rel="stylesheet" type="text/css" href="./app/header/css/header.css" />
+<link rel="stylesheet" type="text/css" href="./app/middleMenu/css/middle.css" />
 <link rel="stylesheet" type="text/css" href="./app/main/css/main.css" />
+<link rel="stylesheet" type="text/css" href="./app/footer/css/footer.css" />
 <!--CSS injection end-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
@@ -14,22 +16,17 @@
 <script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
-       			css3: true
+				anchors: ['firstPage', 'secondPage', '3rdPage'],
+				css3: true
        		});
 		});
 </script>
 
 </head>
 <body class="body main-background--normal">
-	
-	<div class="main-content">
-		<div id="fullpage">
-			<!--first section start-->
-			<div class="section main-content__firstsection" id="section1">
-				<div class="intro main-content__item">
-					
-					<div class="header">
+	<div class="layout_type_home">
+		<div class="layout_type_home__content">
+			<div class="header">
 						<div class="header__logo">
 							<a href="#" class="header__logo--normal"><img src="./app/header/images/logo.png"></a>
 							<a href="#" class="header__logo--scroll"><img src="./app/header/images/logo-scroll.png"></a>
@@ -40,11 +37,48 @@
 							<ul class="header__menuList">
 								
 								<li class="menuList__element">
-									<a class="menuList__link"  href="#">Бухгалтерия</a>
+										
+										<a class="menuList__link"  href="#">Бухгалтерия</a>
+										<div class="menuList__link__second__div">
+										<ul class="menuList__link__second__ul">
+											<li>
+												<a class="menuList__link__second__item" href="#">Бухгалтерский аутсорсинг</a>
+											</li>
+											
+											<li>
+												<a class="menuList__link__second__item" href="#">Электронная сдача отчетности</a>
+											</li>
+											<li>
+												<a class="menuList__link__second__item" href="#">Консалтинговые услуги</a>
+											</li>
+											<li>
+												<a class="menuList__link__second__item" href="#">Оптимизация налогов</a>
+											</li>
+										</ul>
+										</div>
+										
+										
 								</li>
 								
 								<li class="menuList__element">
 									<a class="menuList__link" href="#">Бизнесу</a>
+									<div class="menuList__link__second__div">
+										<ul class="menuList__link__second__ul">
+											<li>
+												<a class="menuList__link__second__item" href="#">Бухгалтерский аутсорсинг</a>
+											</li>
+											
+											<li>
+												<a class="menuList__link__second__item" href="#">Электронная сдача отчетности</a>
+											</li>
+											<li>
+												<a class="menuList__link__second__item" href="#">Консалтинговые услуги</a>
+											</li>
+											<li>
+												<a class="menuList__link__second__item" href="#">Оптимизация налогов</a>
+											</li>
+										</ul>
+										</div>
 								</li>
 								
 								<li class="menuList__element">
@@ -71,32 +105,109 @@
 							</div>
 						</div>
 					</div>
+			<div class="userAuth">
+						<div class="userAuth__table">
+							<div class="userAuth__tr">
+								<div class="userAuth__1c">
+									<a href="#">
+										<img src="./app/header/images/1c.png">
+									</a>
+									<a href="#" class="Onec__label">вход для клиентов</a>
+								</div>
+								<div class="userAuth__demo">
+									<a class="demo__btn" href="#">#demo</a>
+									<a class="demo__link" href="#">демо версия</a>												</div>
+							</div>
+						</div>
+					</div>
+			<div class="middleMenu">
+				
+				<ul class="middleMenu__menu">
+					<li class="middleMenu__item"><a class="middleMenu__link" href="#firstPage">Бухгалтерские услуги</a></li>
+					<li class="middleMenu__item"><a class="middleMenu__link" href="#secondPage">IT аутсорсинг</a></li>
+					<li class="middleMenu__item"><a class="middleMenu__link" href="#3rdPage">Новый раздел</a></li>
+				</ul>
+				
+			</div>
+			<div class="footer">
+				<!--footer start-->
+				
+						<div class="footer__col footer__col--_1_of_3 leftMenu">
+							<ul class="leftMenu__menu">
+								<li class="leftMenu__menu__item">
+									<a href="#" class="leftMenu__menu__link">О компании</a>
+								</li>
+								<li class="leftMenu__menu__item">
+									<a href="#" class="leftMenu__menu__link">Новости</a>
+								</li>
+								<li class="leftMenu__menu__item">
+									<a href="#" class="leftMenu__menu__link">Сроки отчетности</a>
+								</li>
+								<li class="leftMenu__menu__item">
+									<a href="#" class="leftMenu__menu__link">Сотрудники</a>
+								</li>
+								<li class="leftMenu__menu__item">
+									<a href="#" class="leftMenu__menu__link">Отзывы</a>
+								</li>
+								<li class="leftMenu__menu__item">
+									<a href="#" class="leftMenu__menu__link">Написать письмо</a>
+								</li>	
+							</ul>
+						</div>
+						
+						<div class="footer__col footer__col--_1_of_3 copyright">
+							<div class="copiright__text">developed by <a class="copyright__link" href="#">NuArz Digital</a></div>
+						</div>
+						
+						<div class="footer__col footer__col--_1_of_3 socialButtons">
+							<span class="socialButtons__header">Мы в социальных сетях:</span><a href="#" class="socialButtons__link socialButtons__link--vk">&nbsp;</a><a href="#" class="socialButtons__link socialButtons__link--fb"></a><a href="#" class="socialButtons__link socialButtons__link--gplus"></a>
+						</div>
+						
+					</div>
+					<!--footer end-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main-content">
+		<div id="fullpage">
+			<!--first section start-->
+			<div class="section main-content--firstsection" id="section1">
+				<div class="intro main-content__item">
 					
+					<div class="contentZone">
+						<div class="contentZone__item">
+							<h1 class="contentZone__item__header">Рекламный заголовок</h1>
+							<p class="contentZone__item__p">Рекламный текст Рекламный текст  Рекламный текст Рекламный текст Рекламный текст  Рекламный текст Рекламный текст Рекламный текст  Рекламный текст Рекламный текст Рекламный текст  Рекламный текст Рекламный текст Рекламный текст  Рекламный текст Рекламный текст Рекламный текст  Рекламный текст Рекламный текст Рекламный текст  Рекламный текст</p>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!--first section end-->
-			
+			 
 			
 			<!--second section start-->
-			<div class="section" id="section2">
+			<div class="section main-content--secondsection" id="section2">
 				<div class="intro main-content__item">
-					<h1 class="main-content__header">Speed on mobile</h1>
-					<p class="main-content__p">
-						If CSS3 transforms are supported (e.g. on mobile devices) they will be used for animations, usually a good
-	      choice if the animation on mobile devices is slow.
-				    </p>
+					<div class="contentZone">
+						<div class="contentZone__item">
+							<h1 class="contentZone__item__header">It Аутсорсинг</h1>
+							<p class="contentZone__item__p">Рекламный текст Рекламный текст  Рекламный текст Рекламный текст Рекламный текст  Рекламный текст Рекламный текст Рекламный текст  Рекламный текст Рекламный текст Рекламный текст  Рекламный текст Рекламный текст Рекламный текст  Рекламный текст Рекламный текст Рекламный текст  Рекламный текст Рекламный текст Рекламный текст  Рекламный текст</p>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!--second section end-->
 			
 			<!--third section start-->
-			<div class="section" id="section3">
+			<div class="section main-content--thirdsection" id="section3">
 				<div class="intro main-content--item">
-					<h1 class="main-content--header">Speed on mobile</h1>
-					<p class="main-content--p">
-						If CSS3 transforms are supported (e.g. on mobile devices) they will be used for animations, usually a good
-	      choice if the animation on mobile devices is slow.
-				    </p>
+					<div class="contentZone">
+						<div class="contentZone__item">
+							<h1 class="contentZone__item__header">Новый раздел</h1>
+							<p class="contentZone__item__p">Рекламный текст Рекламный текст  Рекламный текст Рекламный текст Рекламный текст  Рекламный текст Рекламный текст Рекламный текст  Рекламный текст Рекламный текст Рекламный текст  Рекламный текст Рекламный текст Рекламный текст  Рекламный текст Рекламный текст Рекламный текст  Рекламный текст Рекламный текст Рекламный текст  Рекламный текст</p>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!--third section end-->
@@ -105,5 +216,7 @@
 		
 	</div>
 	<footer></footer>
+	
+<script type="text/javascript" src="./app/header/js/header.js"></script>	
 </body>
 </html>

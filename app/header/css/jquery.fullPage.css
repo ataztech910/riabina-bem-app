@@ -48,6 +48,8 @@ html.fp-enabled,
     width: 1190px;
     height: 100%;
     margin: 0 auto;
+    
+    position: relative;
 }
 .fp-slidesContainer {
     float: left;

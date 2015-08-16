@@ -1,0 +1,28 @@
+.middleMenu{
+	width: 290px;
+	height: 125px;
+	background: url(../images/mm-bg.png) no-repeat;
+	position: absolute;
+    left: 0;
+    top: 65%;
+    text-align: right;
+    
+}
+
+.middleMenu__menu{
+	list-style-type: none;
+	padding-right: 20px;
+	line-height: 20px;
+}
+
+.middleMenu__item{
+	padding: 5px;
+}
+
+.middleMenu__link{
+	color: #fff;
+	text-decoration: none;
+}
+.middleMenu__link:hover{
+	text-decoration: underline;
+}
